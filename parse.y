@@ -3013,6 +3013,11 @@ top_stmt	: stmt
                     }
                 ;
 
+semicolon.opt:
+  /* empty */
+| ";"
+;
+
 block_open	: '{' {$$ = init_block_exit(p);};
 
 begin_block	: block_open top_compstmt '}'
