@@ -8,6 +8,8 @@ on:
       - '**.rdoc'
       - '**/.document'
       - '.*.yml'
+  workflow_dispatch:
+
   pull_request:
     # Do not use paths-ignore for required status checks
     # https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/troubleshooting-required-status-checks#handling-skipped-but-required-checks
